@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import './App.css';
 
 
@@ -204,7 +205,7 @@ interface DrumControlProps {
 const DrumControl: React.FC<DrumControlProps> = ({ stop, name, power, volume, handleVolumeChange, changeSoundGroup }) => (
   <div className="control">
     <button onClick={stop}>Turn Power {power ? 'OFF' : 'ON'}</button>
-    <h2>Volume: %{Math.round(volume * 100)}</h2>
+    <h2>Volume: {Math.round(volume * 100)}</h2>
     <input
       max="1"
       min="0"
@@ -282,7 +283,7 @@ const stop = () => {
 
   return (
     <div id="drum-machine" className='container'>
-      {setKeyVolume()}
+      
       <div className="wrapper">
         <Keyboard sounds={sounds} play={play} power={power} deactivateAudio={deactivateAudio} />
         <DrumControl
