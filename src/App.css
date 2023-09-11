@@ -1,0 +1,86 @@
+/* App.css atau tempat Anda ingin menyimpan stylesheet */
+body {
+  background-color: hwb(192 5% 47%);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#drum-machine {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.drum-pad {
+  background-color:  hwb(192 5% 47%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.drum-pad:hover {
+  background-color: #005eaa;
+}
+
+.clip {
+  display: none;
+}
+
+.control {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  background-color:  hwb(192 5% 47%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005eaa;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#display {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
